@@ -1,4 +1,5 @@
 '''
+re_resnet and ce_resnet can be considered as a combination of SENet and GENet(theta-).
 RE block: Residual excitation block
 add global_average_pooling to the excitation of SE block.
 
