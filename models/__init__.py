@@ -23,3 +23,6 @@ from .r_cbam_resnet import *
 from .r_bam_resnet import *
 
 from .gap_resnet import *
+
+from .re_resnet import *
+from .ce_resnet import *
