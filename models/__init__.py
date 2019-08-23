@@ -26,3 +26,5 @@ from .gap_resnet import *
 
 from .re_resnet import *
 from .ce_resnet import *
+
+from .r2_se_resnet import *
