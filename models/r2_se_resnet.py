@@ -152,25 +152,25 @@ class PreActResNet(nn.Module):
         return out
 
 
-def RSEResNet18(num_classes=1000):
+def R2SEResNet18(num_classes=1000):
     return PreActResNet(PreActBlock, [2,2,2,2],num_classes)
 
-def RSEResNet34(num_classes=1000):
+def R2SEResNet34(num_classes=1000):
     return PreActResNet(PreActBlock, [3,4,6,3],num_classes)
 
-def RSEResNet50(num_classes=1000):
+def R2SEResNet50(num_classes=1000):
     return PreActResNet(PreActBottleneck, [3,4,6,3],num_classes)
 
-def RSEResNet101(num_classes=1000):
+def R2SEResNet101(num_classes=1000):
     return PreActResNet(PreActBottleneck, [3,4,23,3],num_classes)
 
-def RSEResNet152(num_classes=1000):
+def R2SEResNet152(num_classes=1000):
     return PreActResNet(PreActBottleneck, [3,8,36,3],num_classes)
 
 
 def test():
-    net = RSEResNet18(num_classes=100)
+    net = R2SEResNet18(num_classes=100)
     y = net((torch.randn(1,3,32,32)))
     print(y.size())
 
-# test()
+test()
